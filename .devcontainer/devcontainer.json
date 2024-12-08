@@ -8,12 +8,11 @@
     "vscode": {
       "extensions": [
         "rust-lang.rust-analyzer",
-        "serayuzgur.crates",
+        "fill-labs.dependi",
         "vadimcn.vscode-lldb"
       ]
     }
   },
-  "postCreateCommand": "cargo install cargo-watch",
   "workspaceFolder": "/workspace",
   "workspaceMount": [
     "source=/workspaces/${localWorkspaceFolderBasename},target=/workspace,type=bind,consistency=cached",
