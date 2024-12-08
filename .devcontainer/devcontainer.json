@@ -1,9 +1,6 @@
 {
   "name": "Rust Dev Container",
   "image": "rust:latest",
-  "features": {
-    "ghcr.io/devcontainers/features/rust:1": {}
-  },
   "customizations": {
     "vscode": {
       "extensions": [
@@ -14,8 +11,5 @@
     }
   },
   "workspaceFolder": "/workspace",
-  "workspaceMount": [
-    "source=/workspaces/${localWorkspaceFolderBasename},target=/workspace,type=bind,consistency=cached",
-    "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
-  ]
+  "workspaceMount": "source=${localWorkspaceFolder},target=/workspace,type=bind,consistency=cached"
 }
